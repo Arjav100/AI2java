@@ -14,8 +14,28 @@ public class MathOperations
     {
         Scanner sc = new Scanner(System.in);
         
-        int num = sc.nextInt();
-        System.out.println((num>=40)?"Pass":"Fail");
+        System.out.println("Enter first number:");
+        int num1 = sc.nextInt();
+        System.out.println("Enter second number:");
+        int num2 = sc.nextInt();
+        System.out.println("Enter third number:");
+        int num3 = sc.nextInt();
+        if(num1==num2 || num1==num3 || num2==num3)
+        {
+            System.out.println("Either two numbers or all three are equal\n");
+        }
+        else if(num1>num2 && num1>num3)
+        {
+            System.out.println(num1+" is greater\n");
+        }
+        else if(num2>num3 && num2>num1)
+        {
+            System.out.println(num2+" is greater\n");
+        }
+        else
+        {
+            System.out.println(num3+ " is greater\n");
+        }
         
     }
     
